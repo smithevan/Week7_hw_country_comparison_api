@@ -3,7 +3,7 @@
     <h1>Compare Countries</h1>
     <first-country :countries="countries"></first-country>
     <second-country :countries="countries"></second-country>
-    <!-- <first-country-detail :firstCountry="firstCountry"></first-country-detail> -->
+    <first-country-detail :firstCountry="firstCountry"></first-country-detail>
   </div>
 </template>
 
@@ -11,7 +11,7 @@
 
 import FirstCountry from './components/FirstCountry.vue'
 import SecondCountry from './components/SecondCountry.vue'
-// import FirstCountryDetail from './components/SelectedBeerDetails.vue'
+import FirstCountryDetail from './components/FirstCountryDetail.vue'
 import { eventBus } from './main.js'
 
 export default {
@@ -41,8 +41,8 @@ export default {
 
   components: {
     'first-country': FirstCountry,
-    'second-country': SecondCountry
-    // 'first-country-detail': FirstCountryDetail
+    'second-country': SecondCountry,
+    'first-country-detail': FirstCountryDetail
   }
 }
 </script>

@@ -2,7 +2,7 @@
 
   <div v-if="firstCountry" id="countryDetail">
     <h2>{{firstCountry.name}}</h2>
-    <p><span>Description</span>: {{firstCountry.region.value}}</p>
+    <p><span>Region</span>: {{firstCountry.region.value}}</p>
   </div>
 
 </template>
