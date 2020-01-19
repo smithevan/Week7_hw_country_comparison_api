@@ -5,6 +5,7 @@
     <second-country :countries="countries"></second-country>
     <first-country-detail :firstCountry="firstCountry"></first-country-detail>
     <second-country-detail :secondCountry="secondCountry"></second-country-detail>
+    <!-- <country-comparison :firstCountry="firstCountry" :secondCountry="secondCountry"></country-comparison> -->
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import FirstCountry from './components/FirstCountry.vue'
 import SecondCountry from './components/SecondCountry.vue'
 import FirstCountryDetail from './components/FirstCountryDetail.vue'
 import SecondCountryDetail from './components/SecondCountryDetail.vue'
+// import CountryComparison from './components/CountryComparison.vue'
 import { eventBus } from './main.js'
 
 export default {
@@ -45,7 +47,8 @@ export default {
     'first-country': FirstCountry,
     'second-country': SecondCountry,
     'first-country-detail': FirstCountryDetail,
-    'second-country-detail': SecondCountryDetail
+    'second-country-detail': SecondCountryDetail,
+    // 'country-comparison': CountryComparison
   }
 }
 </script>
