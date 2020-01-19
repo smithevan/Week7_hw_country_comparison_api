@@ -4,6 +4,7 @@
     <first-country :countries="countries"></first-country>
     <second-country :countries="countries"></second-country>
     <first-country-detail :firstCountry="firstCountry"></first-country-detail>
+    <second-country-detail :secondCountry="secondCountry"></second-country-detail>
   </div>
 </template>
 
@@ -12,6 +13,7 @@
 import FirstCountry from './components/FirstCountry.vue'
 import SecondCountry from './components/SecondCountry.vue'
 import FirstCountryDetail from './components/FirstCountryDetail.vue'
+import SecondCountryDetail from './components/SecondCountryDetail.vue'
 import { eventBus } from './main.js'
 
 export default {
@@ -42,7 +44,8 @@ export default {
   components: {
     'first-country': FirstCountry,
     'second-country': SecondCountry,
-    'first-country-detail': FirstCountryDetail
+    'first-country-detail': FirstCountryDetail,
+    'second-country-detail': SecondCountryDetail
   }
 }
 </script>
