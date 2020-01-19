@@ -6,16 +6,17 @@
 </template>
 
 <script>
+
 import FirstCountry from './components/FirstCountry.vue'
+import { eventBus } from './main.js'
 
 export default {
   name: 'app',
   data() {
     return {
-      countries: [{}], //array of country objects with VATs included
-      firstCountry: null, //Object of country that has been selected
-      secondCountry: null,
-      CompletedTrip: [] //object of the beer when it's been selected as favourite
+      countries: [{}], //array of country objects with info included
+      firstCountry: null, //Object of first country that has been selected
+      secondCountry: null //Object of second country that has been selected
     }
   },
 
